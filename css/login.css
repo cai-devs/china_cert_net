@@ -9,10 +9,13 @@ a{
     text-decoration: none;
     color: #FEFEFF;
 }
+html,body {
+    min-width: 100%;
+    min-height: 100%;
+}
 body{
     background:url(../images/login/login_bg.jpg) no-repeat center;
     background-size: cover;
-    min-width: 100%;
 }
 .container{
     min-width: 1024px;
@@ -25,32 +28,32 @@ body{
     height: 100px;
 }
 .nav ul{
-    display: flex;
-    justify-content: flex-end;
+    margin-right: 80px;
 }
 .nav {
-    padding-top: 30px;
+    padding-top: 45px;
+    position: relative;
+    z-index: 100;
 }
 .nav li,nav a{
     width: 80px;
-    height: 27px;
+    height: 30px;
+    line-height: 30px;
 }
 .nav li{
-    margin: 30px 20px;
-    line-height: 27px;
+    margin-left: 30px;
     text-align: center;
-    float: left;
+    float: right;
     background-color: rgba(24, 144, 255, 0.6);
     border-radius: 4px;
 }
+
 .nav a{
     display: block;
-    cursor: none;
     border-radius: 4px;
     
 }
 .nav a:hover{
-    cursor: pointer;
     background-color: rgba(24, 144, 255, 1);
 }
 .nav a{
@@ -69,7 +72,7 @@ body{
 }
 
 .input-container {
-    width: 376px;
+    width: 375px;
     height: 60px;
     border-radius: 45px;
     background: transparent;
@@ -83,30 +86,29 @@ body{
     width: 19px;
     height: 22px;
     position: absolute;
-    top:18px;
-    left: 37px;
+    top:21px;
+    left: 30px;
 }
 input{
     outline-style: none; 
 }
 .user-id input,.user-key input{
     width:278px;
-    height: 55px;
-    font-size: 10px;
+    height: 100%;
+    font-size: 12px;
     font-weight: 600;
-    color:rgba(255, 255, 255, 0.498);
     background-color: transparent;
     border-color: transparent;
     overflow: hidden;
-    font-weight: 600;
     position: absolute;
     right: 22px;
+    left: 75px;
     top:0;
-
+    color: #fff;
 }
 .user-submit input{
-    width: 376px;
-    height: 58px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(254, 205, 8, 1);
     border: 1px solid rgba(254, 205, 8, 1);
     border-radius: 45px;
@@ -118,8 +120,8 @@ input{
 }
 .input-container .mask {
     background:transparent;
-    width: 376px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
 
     border:1px solid rgba(255, 255, 255, 0.5);
     position: absolute;
@@ -152,7 +154,7 @@ input{
 .center {
     position: absolute;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 85px 0 20px;
     box-sizing: border-box;
     left: 0;
     top: 50%;
