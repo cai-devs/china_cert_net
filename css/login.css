@@ -15,9 +15,11 @@ body{
     min-width: 100%;
 }
 .container{
-    width: 1366px;
+    min-width: 1024px;
+    max-width: 1366px;
     height: 100vh;
-    margin: auto
+    margin: auto;
+    position: relative;
 }
 .nav,.nav ul{
     height: 100px;
@@ -51,32 +53,19 @@ body{
     cursor: pointer;
     background-color: rgba(24, 144, 255, 1);
 }
-.nav ul li:nth-child(4){
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(217, 217, 217, 1);
-}
-.nav ul li:nth-child(4) a{
-    color: rgba(0, 0, 0, 0.647058823529412);
-}
-.nav ul li:nth-child(4) a:hover{
-    background-color: rgba(255, 255, 255, 1);
-}
 .nav a{
     font-size: 14px;
     font-weight: 400;
-    font-family: 'PingFangSC-Regular', 'PingFang SC';
 }
 .content{
-    height: calc(100vh - 130px);
-    position: relative;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 .login-form{
-    height: 300px;
-    width: 376px;
-    position: absolute;
-    right: 20px;
-    top:50%;
-    margin-top:-150px;
+    float: right;
 }
 
 .input-container {
@@ -85,15 +74,10 @@ body{
     border-radius: 45px;
     background: transparent;
     position: relative;
-}
-.user-id{
-    margin: 40px auto 10px auto;
-}
-.user-key{
-    margin: 10px auto 10px auto;
+    margin-bottom: 20px;
 }
 .user-submit{
-    margin:25px auto auto auto;
+    margin-top: 25px;
 }
 .login-img{
     width: 19px;
@@ -148,4 +132,29 @@ input{
 .input-container input:focus + .mask {
     border-color: rgba(254, 205, 8, 0.4);
     background-color: rgba(43, 41, 41, 0.2);
+}
+
+.slogan {
+    color: #fff;
+    float: left;
+}
+
+.slogan h2 {
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.slogan h3 {
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.center {
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }
