@@ -12,6 +12,7 @@ a{
 html,body {
     min-width: 100%;
     min-height: 100%;
+    font-family: 'PingFang SC','Helvetica Neue',Helvetica,STHeitiSC-Light,WOL_SB,'Segoe UI Semibold','Segoe UI',Tahoma,Helvetica,'Microsoft Yahei',sans-serif;
 }
 body{
     background:url(../images/login/login_bg.jpg) no-repeat center;
