@@ -1,19 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #FEFEFF;
-}
-html,body {
-    min-width: 100%;
-    min-height: 100%;
-    font-family: 'PingFang SC','Helvetica Neue',Helvetica,STHeitiSC-Light,WOL_SB,'Segoe UI Semibold','Segoe UI',Tahoma,Helvetica,'Microsoft Yahei',sans-serif;
-}
+@import "./reset.css";
 body{
     background:url(../images/login/login_bg.jpg) no-repeat center;
     background-size: cover;
@@ -40,6 +25,7 @@ body{
     width: 80px;
     height: 30px;
     line-height: 30px;
+    color: #fff;
 }
 .nav li{
     margin-left: 30px;
@@ -52,7 +38,6 @@ body{
 .nav a{
     display: block;
     border-radius: 4px;
-    
 }
 .nav a:hover{
     background-color: rgba(24, 144, 255, 1);
