@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #FEFEFF;
+}
+body{
+    background:url(../images/login/login_bg.jpg) no-repeat center;
+    background-size: cover;
+    min-width: 100%;
+}
+.container{
+    width: 1366px;
+    height: 100vh;
+    margin: auto
+}
+.nav,.nav ul{
+    height: 100px;
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav {
+    padding-top: 30px;
+}
+.nav li,nav a{
+    width: 80px;
+    height: 27px;
+}
+.nav li{
+    margin: 30px 20px;
+    line-height: 27px;
+    text-align: center;
+    float: left;
+    background-color: rgba(24, 144, 255, 0.6);
+    border-radius: 4px;
+}
+.nav a{
+    display: block;
+    cursor: none;
+    border-radius: 4px;
+    
+}
+.nav a:hover{
+    cursor: pointer;
+    background-color: rgba(24, 144, 255, 1);
+}
+.nav ul li:nth-child(4){
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.nav ul li:nth-child(4) a{
+    color: rgba(0, 0, 0, 0.647058823529412);
+}
+.nav ul li:nth-child(4) a:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.nav a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'PingFangSC-Regular', 'PingFang SC';
+}
+.content{
+    height: calc(100vh - 130px);
+    position: relative;
+}
+.login-form{
+    height: 300px;
+    width: 376px;
+    position: absolute;
+    right: 20px;
+    top:50%;
+    margin-top:-150px;
+}
+
+.input-container {
+    width: 376px;
+    height: 60px;
+    border-radius: 45px;
+    background: transparent;
+    position: relative;
+}
+.user-id{
+    margin: 40px auto 10px auto;
+}
+.user-key{
+    margin: 10px auto 10px auto;
+}
+.user-submit{
+    margin:25px auto auto auto;
+}
+.login-img{
+    width: 19px;
+    height: 22px;
+    position: absolute;
+    top:18px;
+    left: 37px;
+}
+input{
+    outline-style: none; 
+}
+.user-id input,.user-key input{
+    width:278px;
+    height: 55px;
+    font-size: 10px;
+    font-weight: 600;
+    color:rgba(255, 255, 255, 0.498);
+    background-color: transparent;
+    border-color: transparent;
+    overflow: hidden;
+    font-weight: 600;
+    position: absolute;
+    right: 22px;
+    top:0;
+
+}
+.user-submit input{
+    width: 376px;
+    height: 58px;
+    background-color: rgba(254, 205, 8, 1);
+    border: 1px solid rgba(254, 205, 8, 1);
+    border-radius: 45px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.user-submit input:hover{
+    cursor: pointer;
+}
+.input-container .mask {
+    background:transparent;
+    width: 376px;
+    height: 60px;
+
+    border:1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 45px;
+    z-index: -1;
+}
+
+.input-container input:focus + .mask {
+    border-color: rgba(254, 205, 8, 0.4);
+    background-color: rgba(43, 41, 41, 0.2);
+}
