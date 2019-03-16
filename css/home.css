@@ -1,0 +1,27 @@
+@import "./main.css";
+.sub-menu-num {
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sub-menu .sub-menu-num p{
+    float:left;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+}
+.sub-menu-num p span,.sub-menu-num p strong{
+    display: block;
+}
+.sub-menu-num p span{
+    font-size: 14px;
+    color:#999;
+    margin-top: 7px;
+}
+.sub-menu-num p strong{
+    font-size: 30px;
+    margin-top: 3px;
+    font-weight: 200;
+    color: #333;
+}
