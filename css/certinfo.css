@@ -1,0 +1,66 @@
+@import "./main.css";
+
+#bd .header ul li {
+    flex: 2;
+}
+
+.table {
+    margin-top: -25px;
+}
+
+#bd .header {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 18px;
+    padding-top: 16px;
+}
+
+#bd {
+    min-height: calc(100vh - 380px);
+}
+
+.certinfo {
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    margin: 20px;
+    color: #999;
+}
+
+.certinfo .qr-code {
+    width: 250px;
+    text-align: center;
+    border-right: 1px solid #f0f2f5;
+}
+
+.certinfo .result {
+    flex-grow: 1;
+}
+
+.certinfo .result ul {
+    margin-top: 20px;
+    display: flex;
+    border-top: 1px solid #f0f2f5;
+}
+
+.certinfo .result p {
+    padding: 0 30px;
+}
+
+.certinfo .result ul li {
+    flex: 1;
+    line-height: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.certinfo .result ul li h4 {
+    font-size: 24px;
+    color: #333;
+}
+
+.certinfo .result ul li:first-child {
+    border-right: 1px solid #f0f2f5;
+}
