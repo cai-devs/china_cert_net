@@ -85,7 +85,7 @@ body,html {
 #bd .bd-container {
     padding: 25px;
     overflow: hidden;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     background: #fff;
 }
 
@@ -184,6 +184,7 @@ body,html {
     margin: 23px 25px;
     background: url(../images/user/switch.png) no-repeat center;
     background-size: contain;
+    cursor: pointer;
 }
 .menu-switch img:hover{
     cursor: pointer;
