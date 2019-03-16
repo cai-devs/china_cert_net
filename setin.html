@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <title>登录</title>
-        <link rel="stylesheet" type="text/css" href="css/user.css">
+        <title>setin</title>
+        <link rel="stylesheet" type="text/css" href="css/setin.css">
     </head>
     <body>
         <div class="wrapper">
@@ -82,32 +82,76 @@
                     <div class="header">
                         <ul>
                             <li>
-                                <p>设置用户、证书等系统标准化数据</p>
-                                <p class="title">管理员</p>
+                                <p>证书模板参数：</p>
+                                <p class="title">设置打印参数</p>
                             </li>
                             <li>
-                                <p>机构身份：所在机构身份（系统管理员/用户</p>
-                                <p class="title">管理员</p>
-                            </li>
-                            <li>
-                                <p>用户角色：管理、运营、教师、学生、用户</p>
-                                <p class="title">管理员</p>
+                                <p>打印模板选择：</p>
+                                <p class="title">选择打印模板</p>
                             </li>
                         </ul>
                     </div>
                     <div class="bd-container">
-                        <dl>
-                            <dt>数据信息</dt>
-                            <dd>请选择一下证书数据</dd>
-                        </dl>
-                        <dl>
+                        <div class="bd-content-left">
+                            <dl class="data-msg">
                                 <dt>数据信息</dt>
-                                <dd>请选择一下证书数据</dd>
-                                <dd>
-                                    <label><input type="checkbox" />aaaa</label>
-                                </dd>
+                                <dd class="bd-dd-fist bd-ldd-fist">请选择一下证书数据</dd>
+                                <dd><label><input type="checkbox"/>证书名称</label></dd>
+                                <dd><label><input type="checkbox"/>发证机构（评奖单位）</label></dd>
+                                <dd><label><input type="checkbox"/>机构名称</label></dd>
+                                <dd><label><input type="checkbox"/>分支机构名称</label></dd>
+                                <dd><label><input type="checkbox"/>项目级别</label></dd>
+                                <dd><label><input type="checkbox"/>评奖周期</label></dd>
+                                <dd><label><input type="checkbox"/>获奖时间</label></dd>
+                                <dd><label><input type="checkbox"/>获奖内容</label></dd>
                             </dl>
+                            <dl>
+                                <dt>默认坐标信息</dt>
+                                <dd class="bd-dd-fist">横坐标：<span>123</span></dd>
+                                <dd>纵坐标：<span>200</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>默认字体</dt>
+                                <dd class="bd-dd-fist choose-font">选择字体：
+                                    <select>
+                                        <option value="微软雅黑">微软雅黑</option>
+                                        <option value="宋体">宋体</option>
+                                        <option value="仿宋">仿宋</option>
+                                        <option value="黑体">黑体</option>
+                                        <option value="方正圆体">方正圆体</option>
+                                    </select>
+                                </dd>
+                                <dd>内容填写：优秀获奖证书（Text 选择获奖内容显示为文本）</dd>
+                            </dl>
+                        </div>
+                        <div class="bd-content-right">
+                            <dl>
+                                <dt>模板信息</dt>
+                                <dd class="bd-rdd-fist">模板类型：
+                                    <select class="certificate">
+                                        <option value="荣誉证书">荣誉证书</option>
+                                        <option value="专利发放">专利发放</option>
+                                        <option value="培训证书">培训证书</option>
+                                        <option value="项目证书">项目证书</option>
+                                        <option value="资格认证">资格认证</option>
+                                    </select>
+                                </dd>
+                                <dd>模板大小：
+                                    <select class="certificate">
+                                        <option value="A4-220*297">A4-220*297</option>
+                                        <option value="A4-230*297">A4-230*297</option>
+                                        <option value="B3-320*280">B3-320*280</option>
+                                    </select>
+                                </dd>
+                                    <dd class="award-certificate"><img src="./images/certificate.png"></dd>
+                            </dl>
+                        </div>
                     </div>
+                    <ul class="bd-fun-choose">
+                        <li><a href="###"><span>+</span>&nbsp载入字段</a></li>
+                        <li><a href="###">预览效果</a></li>
+                        <li><a href="###">批量生成批次</a></li>
+                    </ul>
                 </div>
                 <div id="ft">
                     <p class="links">

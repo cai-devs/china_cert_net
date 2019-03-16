@@ -1,0 +1,103 @@
+@import "./main.css";
+#bd .header li {
+    text-align: left;
+}
+.bd-container{
+    display: flex;
+}
+.bd-content-left,.bd-content-right{
+    flex: 1
+}
+.bd-content-left{
+    padding-left: 27px;
+}
+.bd-content-left label:hover{
+    cursor: pointer;
+}
+.bd-container dl{
+    width: 100%;
+}
+.bd-container{
+    position: relative;
+}
+.bd-container .bd-fun-choose li{
+    float: left;
+}
+.bd-container dt{
+    font-weight: 650;
+    font-size: 16px;
+    color: #000;
+    line-height: 20px;
+    padding: 20px 0;
+}
+.data-msg dt{
+    padding-top:0;
+}
+.bd-content-right dl dt:first-child{
+    padding-top:0;
+}
+.bd-content-left dd{
+    font-size: 13px;
+    padding-top:10px;
+    color:#333;
+}
+.bd-content-left input{
+    margin-right: 3px;
+}
+.bd-content-left .bd-ldd-fist{
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+.bd-content-left .bd-dd-fist{
+    padding-top:0;
+}
+.bd-container select{
+    background-color: #199ED8;
+    font-family: 'ArialMT', 'Arial';
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+.bd-content-left .choose-font select{
+    width: 221px;
+    height: 22px;
+    
+}
+.bd-content-right dd{
+    font-size: 14px;
+    color: #000;
+    padding-top:15px;
+}
+.bd-content-right select{
+    width: 161px;
+    height: 22px;
+}
+.bd-content-right .award-certificate{
+    padding-top:35px;
+}
+.bd-content-right .bd-rdd-fist{
+    padding-top:0;
+}
+.bd-fun-choose{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 50px 0;
+}
+.bd-fun-choose li{
+    height: 27px;
+    padding:0 15px;
+    border:1px solid #d9d9d9;
+    border-radius: 5px; 
+    font-size: 14px;
+    text-align: center;
+    line-height: 27px;
+    margin-left: 20px;
+    color: #333;
+}
+.bd-fun-choose li:hover{
+    cursor: pointer;
+    background: #199ED8;
+    color: #fff;
+}
