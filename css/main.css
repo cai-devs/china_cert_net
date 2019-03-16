@@ -1,9 +1,11 @@
+@import "./bootstrap.min.css";
 @import "./reset.css";
 .wrapper {
     display: flex;
     flex-direction: row;
     min-height: 100%;
     background: #f0f2f5;
+    min-width: 1024px;
 }
 
 #menu {
@@ -34,7 +36,6 @@
     height: 60px;
     border-bottom: 1px solid #e9e9e9;
     background: #fff;
-    line-height: 60px;
 }
 
 #content .sub-menu {
@@ -95,7 +96,7 @@
     margin: 0 20px;
 }
 
-.title{
+#menu .title{
     font-family: 'Impact';
     font-weight: 900;
     font-size: 18px;
@@ -119,17 +120,25 @@
     height: 14px;
     width:14px;
     margin-right:15px; 
+    margin-top: -2px;
 }
-#menu h2::after{
+#menu h2:after{
     content: '';
-    width:10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     position: absolute;
-    top:13px;
-    right: 17px;
-    border:1px solid ;
+    top: 50%;
+    right: 15px;
+    border:1px solid;
     border-color: transparent #999  #999 transparent;
-    transform: rotate(45deg);
+    transform: rotate(-45deg) translate(0, -60%);
+    transform-origin: top;
+}
+#menu .menu-item.active h2:after {
+    transform: rotate(45deg) translate(0, -60%);
+}
+#menu .menu-item.active ul {
+    display: block;
 }
 #menu h2:hover{
     cursor: pointer;
@@ -137,54 +146,58 @@
 #menu ul,#menu li{
     width: 100%;
 }
+#menu ul {
+    background: #000c17;
+    overflow: hidden;
+    margin-bottom: 0;
+    display: none;
+}
 #menu li{
     font-size: 14px;
-    padding:15px 0 0 50px;
-    background: #000c17;
+    line-height: 20px;
+    padding-left:50px;
     color: #999999;
+    margin: 10px 0;
 }
-#menu li:hover{
+#menu li:hover,
+#menu li.target-url {
     cursor: pointer;
     color: #fff;
 }
-#menu ul>li:first-child{
-    padding-top: 3px;
-}
-#menu ul li:last-child{
-    padding-bottom: 10px;
-}
 .menu-switch{
-    display: block;
     width: 18px;
     height: 14px;
     float: left;
-    padding-left: 25px;
-}
-.menu-switch img{
-    width: 18px;
-    height: 14px;
+    margin: 23px 25px;
+    background: url(../images/user/switch.png) no-repeat center;
+    background-size: contain;
 }
 .menu-switch img:hover{
     cursor: pointer;
 }
 .nav ul{
-    height: 64px;
+    float: right;
+    font-size: 0;
+    margin-top: 20px;
 }
 .nav li{
     margin-right: 20px;
-    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+}
+.nav li .name,
+.nav li .avatar {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav li .name {
+    font-size: 14px;
+    margin-left: 8px;
 }
 .nav li img{
     width: 16px;
     height: 18px;
-}
-.nav ul>li:first-child{
-    margin-right: 50px;
-    font-size: 14px;
-    line-height: 57px;
-}
-.nav ul li:nth-child(2){
-    margin-right: 7px;
 }
 .sub-menu .text{
     padding-left: 30px;
@@ -193,28 +206,28 @@
     font-size: 14px;
     color: #00000072;
 }
-.sub-menu div{
+.sub-menu .sub-menu-content{
     width: 100%;
     height: 50px;
     margin-top: 8px;
     margin-left: 25px;
-    padding-left: 75px;
+    padding-left: 70px;
     position: relative;
 }
-.sub-menu div img{
+.sub-menu .sub-menu-content img{
     position: absolute;
     top:0;
     left: 0;
     display: block;
-    width: 51px;
-    height: 45px;
+    width: 50px;
+    border-radius: 50px;
 }
-.sub-menu div p{
-    padding-top:8px;
-    padding-bottom: 5px;
+.sub-menu .sub-menu-content p{
+    padding: 10px 0;
     font-size: 20px;
+    line-height: 20px;
 }
-.sub-menu div li{
+.sub-menu .sub-menu-content li{
     padding:0 5px;
     height: 14px;
     line-height: 14px;
@@ -226,13 +239,31 @@
     color: #999;
     position: relative;
 }
-.sub-menu div ul li:first-child{
+.sub-menu .sub-menu-content ul li:first-child{
     padding-left: 0;
 }
-.sub-menu div ul li:last-child{
+.sub-menu .sub-menu-content ul li:last-child{
     border: none;
 }
-.header li p:first-child{
-    padding-left: 15px;    
 
+#bd .header p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    margin: auto;
+}
+
+#bd .header .title {
+    color: #333;
+    font-size: 24px;
+    margin-top: 15px;
+    line-height: 24px;
+}
+
+#bd .header li {
+    text-align: center;
 }
