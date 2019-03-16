@@ -89,6 +89,12 @@
 #ft {
     text-align: center;
     height: 90px;
+    color: #929495;
+    padding-top: 20px;
+}
+
+#ft .links {
+    margin-bottom: 5px;
 }
 
 #ft .links a {
@@ -479,7 +485,7 @@
     height: 27px;
     padding: 0 8px;
     border: 1px solid #d9d9d9;
-    border-radius: 3px;
+    border-radius: 4px;
     color: #666;
     line-height: 27px;
     font-size: 12px;
@@ -491,4 +497,77 @@
 }
 .pager li a {
     display: block;
+}
+
+.pager li select {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.pager li.last {
+    border: none;
+}
+
+.pager li.last input {
+    height: 27px;
+    line-height: 27px;
+    width: 40px;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+}
+
+#bd .filter {
+    display: flex;
+    float: right;
+}
+#bd .filter .input {
+    flex-basis: 250px;
+    margin-left: 5px;
+}
+#bd .filter .input input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    padding: 5px;
+}
+#bd .filter .links {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    width: 260px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+}
+
+#bd .filter .links  a:first-child {
+    border-radius: 3px 0 0 3px;
+}
+#bd .filter .links  a:last-child {
+    border-radius: 0 3px 3px 0;
+}
+#bd .filter .links  a {
+    flex: 1;
+    border: 1px solid #d9d9d9;
+    margin-left: -1px;
+}
+
+#bd .filter .links  a.active {
+    border-color: #1890ff;
+    color: #1890ff;
+    position: relative;
+    z-index: 1;
+}
+
+.pager {
+    float: right;
+    margin-top: 30px;
+}
+
+table {
+    margin-top: 25px;
 }
