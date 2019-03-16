@@ -1,0 +1,44 @@
+@import "./main.css";
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.description {
+    padding: 0 80px;
+    color: #666;
+}
+
+.infomations {
+    margin: 0 120px;
+}
+
+.org-info {
+    margin: 20px 0;
+}
+.org-info ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.org-info ul li {
+}
+
+.pager {
+    margin-top: 0;
+}
+
+.actions {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.actions .btn {
+    margin: 0 20px;
+}

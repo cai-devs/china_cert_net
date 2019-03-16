@@ -74,6 +74,10 @@ body,html {
     
 }
 
+#bd .header ul.align-left li {
+  text-align: left;
+}
+
 #bd .header ul li:last-child {
     border: none;
 }
@@ -495,10 +499,14 @@ body,html {
     line-height: 27px;
     font-size: 12px;
 }
+.pager li:hover {
+  color: #1890ff;
+}
 .pager li.select {
     background: #1890ff;
     color: #fff;
     border-color: #1890ff;
+    cursor: pointer;
 }
 .pager li a {
     display: block;
@@ -512,6 +520,12 @@ body,html {
 
 .pager li.last {
     border: none;
+}
+
+.pager li.last:hover {
+  background: #fff;
+  border-color: #d9d9d9;
+  color: #666;
 }
 
 .pager li.last input {
@@ -529,7 +543,7 @@ body,html {
     float: right;
 }
 #bd .filter .input {
-    flex-basis: 250px;
+    width: 250px;
     margin-left: 5px;
     position: relative;
 }
@@ -593,4 +607,28 @@ table {
 .table > tbody > tr > td.no-padding {
     padding: 0;
     text-align: center;
+}
+
+.table a {
+  color: #5a5fc0;
+}
+
+
+.btn {
+  height: 27px;
+  padding:0 15px;
+  border:1px solid #d9d9d9;
+  border-radius: 5px; 
+  font-size: 14px;
+  text-align: center;
+  line-height: 27px;
+  margin-left: 20px;
+  color: #333;
+  display: inline-block;
+}
+.btn:hover{
+  cursor: pointer;
+  background: #199ED8;
+  color: #fff;
+  border-color: #199ED8;
 }

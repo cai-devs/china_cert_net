@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <title>登录</title>
-        <link rel="stylesheet" type="text/css" href="css/user.css">
+        <link rel="stylesheet" type="text/css" href="css/printout.css">
     </head>
     <body>
         <div class="wrapper">
@@ -80,33 +80,123 @@
                 </div>
                 <div id="bd">
                     <div class="header">
-                        <ul>
+                        <ul class="align-left">
                             <li>
-                                <p>设置用户、证书等系统标准化数据</p>
-                                <p class="title">管理员</p>
+                                <p>选择证书：</p>
+                                <p class="title">First 选择机构批次</p>
                             </li>
                             <li>
-                                <p>机构身份：所在机构身份（系统管理员/用户</p>
-                                <p class="title">管理员</p>
+                                <p>配置模板参数：</p>
+                                <p class="title">Second 选择打印模板</p>
                             </li>
                             <li>
-                                <p>用户角色：管理、运营、教师、学生、用户</p>
-                                <p class="title">管理员</p>
+                                <p>生成打印数据：</p>
+                                <p class="title">Third 生成打印文件</p>
                             </li>
                         </ul>
                     </div>
                     <div class="bd-container">
-                        <dl>
-                            <dt>数据信息</dt>
-                            <dd>请选择一下证书数据</dd>
-                        </dl>
-                        <dl>
-                                <dt>数据信息</dt>
-                                <dd>请选择一下证书数据</dd>
-                                <dd>
-                                    <label><input type="checkbox" />aaaa</label>
-                                </dd>
-                            </dl>
+                        <h1>机构证书批次</h1>
+                        <p class="description">
+                            机构证书批次主要根据机构类型证书的批次管理。机构证书批次主要由证书数据管理自动生成，机构批次动态新增后显示“New”字样。其中，机构证书批次生成后，由软件生成二维码，为证书配码。配码完毕后，配置打印模板，选择对应批次证书的打印参照模板。最终，生成打印文件。
+                        </p>
+                        <div class="infomations">
+                            <div class="org-info">
+                                <h3>机构名称</h3>
+                                <ul>
+                                    <li>机构名称：北京联合大学</li>
+                                    <li>管理员：曲丽丽</li>
+                                    <li>联系方式：13888888888</li>
+                                </ul>
+                            </div>
+                            <div class="top">
+                                <div class="filter">
+                                    <div class="input">
+                                        <input type="text" placeholder="请输入机构名称">
+                                    </div>
+                                </div>
+                                <h3>机构批次管理</h3>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>选择</th>
+                                        <th>机构认证编号</th>
+                                        <th>机构名称</th>
+                                        <th>分支机构名称</th>
+                                        <th>用户姓名</th>
+                                        <th>登录账号</th>
+                                        <th>动态新增</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"/></td>
+                                        <td>2011127776</td>
+                                        <td>清华大学</td>
+                                        <td>信息管理学院</td>
+                                        <td>刘东海</td>
+                                        <td>3911001200</td>
+                                        <td><a href="">New</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"/></td>
+                                        <td>2011127776</td>
+                                        <td>清华大学</td>
+                                        <td>信息管理学院</td>
+                                        <td>刘东海</td>
+                                        <td>3911001200</td>
+                                        <td><a href="">New</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"/></td>
+                                        <td>2011127776</td>
+                                        <td>清华大学</td>
+                                        <td>信息管理学院</td>
+                                        <td>刘东海</td>
+                                        <td>3911001200</td>
+                                        <td><a href="">New</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"/></td>
+                                        <td>2011127776</td>
+                                        <td>清华大学</td>
+                                        <td>信息管理学院</td>
+                                        <td>刘东海</td>
+                                        <td>3911001200</td>
+                                        <td><a href="">New</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <ul class="pager">
+                                <li><a href=""><span>‹</span></a></li>
+                                <li class="select"><a href=""><span>1</span></a></li>
+                                <li><a href=""><span>2</span></a></li>
+                                <li><a href=""><span>3</span></a></li>
+                                <li><a href=""><span>4</span></a></li>
+                                <li><a href=""><span>5</span></a></li>
+                                <li><a href=""><span>6</span></a></li>
+                                <li><a href=""><span>›</span></a></li>
+                                <li>
+                                    <select>
+                                        <option value="">10条/页</option>
+                                        <option value="">20条/页</option>
+                                        <option value="">30条/页</option>
+                                    </select>
+                                </li>
+                                <li class="last">
+                                    <span>跳至</span>
+                                    <input type="text" value="5"/>
+                                    <span>页</span>
+                                </li>
+                            </ul>
+                            <div class="actions">
+                                <a href="" class="btn">选择机构批次</a>
+                                <a href="" class="btn">选择打印模板</a>
+                                <a href="" class="btn">生成打印文件</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="ft">

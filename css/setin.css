@@ -1,7 +1,5 @@
 @import "./main.css";
-#bd .header li {
-    text-align: left;
-}
+
 .bd-container{
     display: flex;
 }
@@ -84,20 +82,4 @@
     justify-content: center;
     background: #fff;
     padding: 50px 0;
-}
-.bd-fun-choose li{
-    height: 27px;
-    padding:0 15px;
-    border:1px solid #d9d9d9;
-    border-radius: 5px; 
-    font-size: 14px;
-    text-align: center;
-    line-height: 27px;
-    margin-left: 20px;
-    color: #333;
-}
-.bd-fun-choose li:hover{
-    cursor: pointer;
-    background: #199ED8;
-    color: #fff;
 }

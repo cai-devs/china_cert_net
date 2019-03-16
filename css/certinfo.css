@@ -1,7 +1,7 @@
 @import "./main.css";
 
 #bd .header ul li {
-    flex: 2;
+    flex: 3;
 }
 
 .table {
@@ -25,7 +25,7 @@ h1 {
     padding: 30px;
     background: #fff;
     display: flex;
-    margin: 20px;
+    margin: 0 20px;
     color: #999;
 }
 
